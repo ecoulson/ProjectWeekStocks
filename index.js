@@ -56,7 +56,7 @@ App.get('/api/slip/log', (req, res) => {
 	});
 });
 
-App.use('*', Express.static('client'));
+App.use(Express.static(path.resolve(__dirname, 'client')));
 
 let port = process.env.PORT ? process.env.PORT : 8080;
 App.listen(port, () => {
