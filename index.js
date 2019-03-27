@@ -68,27 +68,28 @@ App.get('/client/approve.html', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'approve.html'))
 });
 
-App.get('/client/slips.js', (req, res) => {
+App.get('/slips.js', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'slips.js'))
 });
 
-App.get('/client/slips.css', (req, res) => {
+App.get('/slips.css', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'slips.css'))
 });
 
-App.get('/client/slips.html', (req, res) => {
+App.get('/slips.html', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'slips.html'))
 });
 
-App.get('/client/main.css', (req, res) => {
+App.get('/main.css', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'main.css'))
 });
 
-App.get('/client/index.js', (req, res) => {
+App.get('/index.js', (req, res) => {
 	res.sendFile(path.resolve(__dirname, 'client', 'index.js'))
 });
 
 App.use(Express.static(path.resolve(__dirname, 'client')));
+
 
 let port = process.env.PORT ? process.env.PORT : 8080;
 App.listen(port, () => {
