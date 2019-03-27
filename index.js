@@ -15,7 +15,6 @@ const teamBalance = {
 
 App.use(BodyParser.urlencoded({ extended: false }))
 App.use(BodyParser.json());
-App.use(Express.static('client'));
 
 App.post('/api/slip', (req, res) => {
 	slipsToApprove.push(req.body);
@@ -55,9 +54,11 @@ App.get('/api/slip/log', (req, res) => {
 		}
 		return res.json(slips).status(200);
 	});
-})
+});
 
-let port = process.argv[2] ? process.argv[2] : 8080;
+App.use('*', Express.static('client'));
+
+let port = process.env.PORT ? process.env.PORT : 8080;
 App.listen(port, () => {
 	info(`Starting server on port ${port}`)
 });
