@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="./main.css">
+	<title>Submit Stock</title>
+</head>
+<body>
+	<div class="container">
+		<form class="stock-container">
+			<h1 class="title">Stock Slip</h1>
+			<a href="slips.html" class="slips-link">Slip Log</a>
+			<br>
+			<label for="team-name">Team Name</label><br>
+			<select id="team-name">
+				<option>ITEA</option>
+				<option>ASIA</option>
+				<option>Yurt</option>
+				<option>Carps</option>
+			</select><br>
+			<label for="stock-symbol">Stock Symbol</label><br>
+			<input class="text-input" type="text" placeholder="Stock Ticker..." id="stock-symbol"/><br>
+			<label for="share-quantity">Share Quantity</label><br>
+			<input class="text-input" type="text" placeholder="Number of Shares..." id="share-quantity"/><br>
+			<label for="type">Type</label><br>
+			<select id="type">
+				<option>Buy</option>
+				<option>Sell</option>
+				<option>Short</option>
+				<option>Cover</option>
+			</select><br>
+			<label for="market">Market</label><input id="market" type="checkbox"><br>
+			<label for="limit">Limit</label><br><input placeholder="Limit..." class="text-input" type="text" id="limit"/><br>
+			<label for="stop">Stop</label><br><input class="text-input" placeholder="Stop..." type="text" id="stop"/><br>
+			<input class="submit" id="submit" type="button" value="Submit">
+		</form>
+	</div>
+	<script src="./index.js"></script>
+</body>
+</html>

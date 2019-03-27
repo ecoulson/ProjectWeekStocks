@@ -1,0 +1,101 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('https://www.tripsavvy.com/thmb/GUxN3OU3Z4g7rHOyLBBz6t6xkf0=/3000x2002/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-501441166-5c31142746e0fb0001c3749b.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.stock-container {
+	width: 50%;
+	height: 625px;
+	margin: 10px auto;
+	background-color: rgb(240, 240, 240);
+	border-radius: 5px;
+}
+
+.title {
+	text-align: center;
+	margin: 25px;
+	padding: 25px;
+}
+
+label {
+	padding-left: 15px;
+	font-size: 14px;
+	color: rgb(150, 150, 150);
+	text-align: center;
+	margin: 0 auto;
+}
+
+input, select {
+	margin: 15px;
+	margin-top: 0;
+}
+
+.text-input {
+	width: 75%;
+	height: 25px;
+	font-size: 16px;
+	padding: 5px;
+	border: none;
+	border: 2px solid black;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+}
+
+.text-input:hover {
+	border: 2px solid palevioletred;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: palevioletred;
+	text-decoration: underline;
+}
+
+.text-input:focus {
+	border: 2px solid palevioletred;
+}
+
+.submit {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	height: 50px;
+	border:none;
+	border: 2px solid black;
+	background-color: rgb(150, 150, 150);
+	font-size: 15px;
+	border-radius: 5px;
+	outline: none;
+}
+
+#stock-symbol {
+	text-transform: uppercase;
+}
+
+.submit:hover {
+	cursor: pointer;
+}
+
+.slips-link {
+	display: block;
+	text-align: center;
+}
